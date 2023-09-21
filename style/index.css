@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo {
+    width: 50px;
+    margin: 10px;
+}
+
+
+.navbar {
+    background-color: black;
+}
+
+.subtitleArea {
+    background: linear-gradient(transparent 50%, black 10%);
+    color: white;
+}
+
+
+/*por alguma razão, quando declaro todos juntos buga
+algo ligado a alguma configuração do bootstramp em relação ao navlink*/
+
+.weber:hover {
+    color: crimson;
+}
+
+.durkheim:hover {
+    color: crimson;
+}
+
+.inicio:hover {
+    color: crimson;
+}
+
+
+/*durkheim*/
+
+.durkheimIMG {
+    width: 30vw;
+    margin: 1em;
+    transition: transform 1s ease;
+    transform: rotate(0deg);
+    /* Rotação inicial */
+    box-shadow: 10px 5px 5px black;
+}
+
+.durkheimIMG:hover {
+    transform: rotate(-10deg);
+    /* Rotação para cima quando o mouse estiver sobre o elemento */
+}
+
+.durkheimIMG:active {
+    transform: rotate(10deg);
+    /* Rotação para baixo quando o mouse é clicado no elemento */
+}
+
+.IMG {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.durk {
+    background-image: url("../img/durkheim-upscaled.png");
+}
+
+.industrial {
+    background-image: url("https://ead.pucpr.br/hs-fs/hubfs/pioneirismo-ingles-na-revolucao-industrial.webp?width=1200&name=pioneirismo-ingles-na-revolucao-industrial.webp");
+    background-attachment: scroll;
+}
+
+.mosaico{
+    width: 30vw;
+    padding: 1em;
+}
+
+p{
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .IMG {
+        height: 30vh;
+    }
+    .IMGexp{
+        height: 120vh;
+    }
+    .mosaico{
+        width: 70vw;
+        padding: 1em;
+    }
+    .text{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 281px) {
+    .IMG {
+        height: 30vh;
+    }
+    .IMGexp{
+        height: 120vh;
+    }
+    .mosaico{
+        width: 70vw;
+        padding: 1em;
+    }
+    .text{
+        font-size: 0.8em;
+    }
+}
+
+
+
+/*test1*/
+
+.test1 {
+    width: 100vw;
+    height: 20vh;
+    position: relative;
+    bottom: 4em;
+    z-index: -1;
+    background-color: black;
+    color: white;
+}
+
+.textIntroDurkheim {
+    font-size: 2em;
+}
+
+.text1 {
+    background-color: #252525;
+    color: white;
+}
